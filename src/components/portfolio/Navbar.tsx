@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { MagneticButton } from "./MagneticButton";
-import logoAsset from "@/assets/ma-logo.png.asset.json";
+import logoAsset from "@/assets/ma-logo.png";
 
 const LINKS = [
   { label: "About", href: "#about" },
@@ -45,7 +45,7 @@ export function Navbar() {
         >
           <a href="#top" onClick={handleClick("#top")} className="flex items-center gap-2.5 group">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="Mayur Akalwadi logo"
               className="h-9 w-9 object-contain drop-shadow-[0_4px_12px_rgba(212,175,55,0.35)] transition-transform duration-300 group-hover:scale-105"
             />

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import portraitAsset from "@/assets/mayur.png.asset.json";
+import portraitAsset from "@/assets/mayur.png";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { ParticleBackground } from "@/components/portfolio/ParticleBackground";
 import { Reveal } from "@/components/portfolio/Reveal";
@@ -16,8 +16,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Executive portfolio of Mayur Akalwadi: 8+ years driving ERP transformation, SAP MM/WM/EWM, supply chain optimization and industrial product strategy." },
       { property: "og:title", content: "Mayur Akalwadi — ERP & Business Transformation Leader" },
       { property: "og:description", content: "Bridging complex industrial product architecture and enterprise-scale efficiency." },
-      { property: "og:image", content: portraitAsset.url },
-      { name: "twitter:image", content: portraitAsset.url },
+      { property: "og:image", content: portraitAsset },
+      { name: "twitter:image", content: portraitAsset },
     ],
   }),
   component: Index,
