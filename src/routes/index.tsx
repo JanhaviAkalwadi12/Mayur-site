@@ -116,7 +116,7 @@ function Hero() {
             <div className="relative glass-gold rounded-3xl overflow-hidden p-2">
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src={portraitAsset.url}
+                  src={portraitAsset}
                   alt="Portrait of Mayur Akalwadi"
                   className="w-full h-auto object-cover aspect-[3/4]"
                   loading="eager"
